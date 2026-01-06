@@ -34,8 +34,16 @@ const getProcessColor = (id: string) => {
   return PROCESS_COLORS[id] || "from-gray-500 to-gray-600";
 };
 
+const DEFAULT_PROCESSES: Process[] = [
+  { id: "P1", arrivalTime: 0, burstTime: 4, priority: 2, remainingTime: 4 },
+  { id: "P2", arrivalTime: 1, burstTime: 3, priority: 1, remainingTime: 3 },
+  { id: "P3", arrivalTime: 2, burstTime: 5, priority: 3, remainingTime: 5 },
+  { id: "P4", arrivalTime: 3, burstTime: 2, priority: 4, remainingTime: 2 },
+  { id: "P5", arrivalTime: 4, burstTime: 6, priority: 1, remainingTime: 6 },
+];
+
 export const CPUScheduler = () => {
-  const [processes, setProcesses] = useState<Process[]>([]);
+  const [processes, setProcesses] = useState<Process[]>(DEFAULT_PROCESSES);
   const [ganttChart, setGanttChart] = useState<GanttBlock[]>([]);
   const [stats, setStats] = useState<{ avgWaiting: number; avgTurnaround: number } | null>(null);
   const [isRunning, setIsRunning] = useState(false);
