@@ -1,73 +1,71 @@
-# Welcome to your Lovable project
+# OS-Nexus: Interactive Operating Systems Visualizer
 
-## Project info
+![Project Status](https://img.shields.io/badge/status-live-success)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Tech Stack](https://img.shields.io/badge/tech-React%20%7C%20Tailwind%20%7C%20Framer%20Motion-blueviolet)
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**OS-Nexus** is a gamified, interactive Single Page Application (SPA) designed to visualize complex Operating Systems algorithms. Built with a "Cyberpunk/Hacker Terminal" aesthetic, it helps students and developers understand scheduling logic through real-time simulation.
 
-## How can I edit this code?
+## 🚀 Live Demo
+**Check out the live application here:**
+[**https://os-nexus-visualizer.lovable.app**](https://os-nexus-visualizer.lovable.app)
 
-There are several ways of editing your application.
+## 🌟 Key Features
 
-**Use Lovable**
+### 1. 🧠 CPU Scheduler (Priority Preemptive)
+Visualize how the CPU handles processes based on priority and arrival time.
+* **Real-time Gantt Chart:** Watch processes execute and get preempted in real-time.
+* **Dynamic Inputs:** Add custom processes with Arrival Time, Burst Time, and Priority.
+* **Metrics:** Automatically calculates Average Waiting Time and Turnaround Time.
+* **Algorithm Logic:** Implements true preemptive logic (time-step simulation), breaking ties with FCFS.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### 2. 💾 Disk Controller (C-SCAN)
+Visualize how a disk arm moves to service read/write requests.
+* **Interactive Disk Head:** Animated marker moving across tracks (0-199).
+* **Visual Jump:** Clearly distinguishes the "Flyback" (End -> Start) from regular seek operations.
+* **Seek Calculation:** Computes total seek operations including the circular jump.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 3. 🎓 Knowledge Check (Quiz)
+A gamified way to test your understanding.
+* **Interactive Cards:** Flip cards to reveal answers and detailed explanations.
+* **Score Tracking:** Keeps track of your correct answers in the session.
 
-**Use your preferred IDE**
+## 🛠️ Tech Stack
+* **Frontend Framework:** React + Vite
+* **Styling:** Tailwind CSS (Cyberpunk/Dark Mode Theme)
+* **Animations:** Framer Motion (Smooth transitions and data visualization)
+* **Icons:** Lucide React
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📦 Installation & Setup
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/YourUsername/os-nexus-visualizer.git](https://github.com/YourUsername/os-nexus-visualizer.git)
+    cd os-nexus-visualizer
+    ```
 
-Follow these steps:
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3.  **Run Locally**
+    ```bash
+    npm run dev
+    ```
+    Open your browser and navigate to `http://localhost:5173`.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🤝 Contributing
+Contributions are welcome! If you have ideas for new algorithms (like Round Robin or Banker's Algorithm), feel free to fork the repo and submit a Pull Request.
 
-# Step 3: Install the necessary dependencies.
-npm i
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/NewAlgorithm`)
+3.  Commit your Changes (`git commit -m 'Add Round Robin Visualizer'`)
+4.  Push to the Branch (`git push origin feature/NewAlgorithm`)
+5.  Open a Pull Request
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 📄 License
+This project is open source and available under the [MIT License](LICENSE).
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+*Built with ❤️ for OS Students everywhere.*
