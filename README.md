@@ -64,6 +64,16 @@ Contributions are welcome! If you have ideas for new algorithms (like Round Robi
 4.  Push to the Branch (`git push origin feature/NewAlgorithm`)
 5.  Open a Pull Request
 
+👥 Collaborators
+
+Dhanush J – 1RF24IS030
+
+Dhruv Ajay Hangal – 1RF24IS031
+
+Arjun – 1RF24IS020
+
+Jeevan V – 1RF24IS045
+
 ## 📄 License
 This project is open source and available under the [MIT License](LICENSE).
 
